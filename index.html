@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Flavien Studio — création graphique, photo, vidéo et services numériques.">
+<title>Flavien Studio — Application</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#f5f7fb;color:#172033;line-height:1.6}
+.hero{background:linear-gradient(135deg,#111827,#2563eb);color:#fff;padding:55px 20px;text-align:center}
+.logo{width:90px;height:90px;margin:auto;border-radius:24px;background:#fff;color:#2563eb;display:flex;align-items:center;justify-content:center;font-size:42px;font-weight:800;box-shadow:0 12px 30px #0003}
+h1{font-size:38px;margin:18px 0 8px}
+.tag{font-size:18px;opacity:.9}
+.container{max-width:900px;margin:30px auto;padding:0 18px}
+.card{background:#fff;border-radius:20px;padding:28px;margin-bottom:20px;box-shadow:0 8px 25px #17203312}
+h2{margin-bottom:12px;color:#111827}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:18px}
+.feature{padding:18px;border:1px solid #e5e7eb;border-radius:14px;background:#fafafa}
+.feature b{display:block;margin-bottom:5px}
+.download{display:block;text-align:center;text-decoration:none;background:#2563eb;color:#fff;padding:16px;border-radius:12px;font-weight:700;margin-top:20px}
+.download:hover{background:#1d4ed8}
+.info{color:#667085;font-size:14px;margin-top:12px;text-align:center}
+footer{text-align:center;padding:30px;color:#667085}
+</style>
+</head>
+<body>
+<section class="hero">
+  <div class="logo">FS</div>
+  <h1>Flavien Studio</h1>
+  <p class="tag">Votre service en un clic</p>
+</section>
+
+<main class="container">
+  <section class="card">
+    <h2>Application Flavien Studio</h2>
+    <p>Retrouvez facilement les services de Flavien Studio : création d'affiches et flyers, communication visuelle, photo, vidéo et services numériques.</p>
+
+    <div class="features">
+      <div class="feature"><b>🎨 Design</b>Affiches, flyers et visuels professionnels.</div>
+      <div class="feature"><b>📸 Photo & vidéo</b>Couverture de vos événements et moments importants.</div>
+      <div class="feature"><b>📱 Services numériques</b>Des solutions simples et rapides.</div>
+    </div>
+
+    <a class="download" href="flavien-studio.apk" download>⬇ Télécharger l'application Android</a>
+    <p class="info">Version 1.0.0 • Android • Flavien Studio</p>
+  </section>
+
+  <section class="card">
+    <h2>Contact</h2>
+    <p>WhatsApp : <strong>+226 58 97 17 66</strong></p>
+    <p>Téléphone : <strong>+226 55 70 94 59</strong></p>
+  </section>
+</main>
+
+<footer>© <span id="year"></span> Flavien Studio — Votre service en un clic</footer>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+</body>
+</html>
